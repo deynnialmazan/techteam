@@ -1,0 +1,173 @@
+@import url(reset.css);
+
+:root {
+    --app-body-box-shadow: 0 0.275rem 1.25rem rgb(11 15 25 / 5%), 0 0.25rem 0.5625rem rgb(11 15 25 / 3%);
+    --app-gray-section: #f3f6ff;
+    --app-button-background-color: #67f6f6;
+    --app-button-hover-background-color: #04d2d2;
+    --app-title-color: #343541;
+    --app-gray-title: #9b9b9b;
+}
+
+body {
+  background-color: var(--app-gray-section);
+}
+
+main {
+  height: auto;
+}
+
+#hero-banner {
+  height: 100vh;
+  text-align: center; 
+  overflow: hidden; 
+  display: grid;
+  place-items: center;   
+  background: rgba(168, 168, 168, 1) url("../images/background.jpg") center center / cover no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: multiply;  
+}
+
+
+/* ------------------------------- */
+/* Loggin box                      */
+/* ------------------------------- */
+
+.login-box {
+  width: 550px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: var(--app-body-box-shadow);
+  background-color: var(--app-gray-section);
+  padding: 50px 10px 40px 10px;
+}
+
+.login-h {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+.login-title {
+  font-size: 22px;
+  color: var(--app-title-color);
+  margin-left: 10px;
+}
+
+span.title {
+  color: var(--app-button-hover-background-color);
+}
+
+.login-p {
+  font-size: 14px;
+  color: var(--app-gray-title);
+}
+
+.user-input {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+input[type=text] {
+  height: 45px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color:#1e1e1e17;
+  border: 1px solid #deddddf3;
+  box-shadow: var(--app-body-box-shadow);
+  transition: all 0.25s ease-in-out;
+}
+
+input[type=text]:hover {
+  border-color: var(--app-button-background-color);
+} 
+
+::placeholder { 
+  color: var(--app-title-color);
+}
+
+.forgot-password, .invalid-feedback{
+  font-size: 12px;
+  color: var(--app-button-hover-background-color);
+  text-align: left;
+  margin-top: 8px;
+}
+
+.forgot-password {
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+input[type=button] {
+  height: 45px;
+  width: 145px; 
+  text-align: center;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-top: 40px;
+  box-shadow: var(--app-body-box-shadow);
+  color: var(--app-button-text-color);
+  transition: all 0.25s ease-in-out;
+}
+
+.login-btn {
+  background-color: var(--app-button-background-color);
+}
+
+.signUp-btn {
+  background-color: var(--app-gray-section);
+  border: 1px solid var(--app-button-background-color);
+}
+
+.login-btn:hover {
+  background-color: var(--app-button-hover-background-color);
+  color: var(--app-gray-section);
+}
+
+.signUp-btn:hover {
+  border-color: var(--app-button-hover-background-color);
+  color: var(--app-button-hover-background-color);
+}
+
+.invalid-feedback {
+  margin-left: 30px;
+  color: rgb(243, 18, 18);
+  visibility: hidden;
+}
+
+.login-footer {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.left-footer {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+  text-align: left;
+  color: var(--app-gray-title);
+  font-size: 10px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+.right-footer {
+  color: var(--app-gray-title);
+  font-size: 10px;
+  margin-top: 50px;
+  margin-left: 45px;
+}
