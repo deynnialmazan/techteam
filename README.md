@@ -3,6 +3,9 @@
 Hello world!
 This is my TechTeam social network. I used the Random User Generator 
 API (https://randomuser.me) to create my 'contacts'. 
+Login in using:
+username: deynni
+password: abc123
 
 ## DEMO
 
